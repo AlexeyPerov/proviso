@@ -1,4 +1,4 @@
-#### The simplest shortcuts' usage (ConditionWidget and ConditionBuilder widgets)
+#### The simplest usage (ConditionWidget and ConditionBuilder)
 ```dart
 Row(
   children: [

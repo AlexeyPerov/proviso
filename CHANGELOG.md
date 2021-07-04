@@ -1,3 +1,8 @@
+## [1.0.1] - 2021-07-06
+
+- Removed dart:io dependency to fully support Web platform
+- Formatting fixes
+
 ## [1.0.0] - 2021-07-06
 
 - Initial implementation: ConditionWidget, ConditionBuilder, SafeBuilder, Conditional, 
