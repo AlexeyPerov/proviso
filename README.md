@@ -1,4 +1,6 @@
-# proviso ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
+# proviso
+ ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)
+ [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 A complete set of tools for conditional rendering (`if`-`else` and `switch` conditions), 
 subtree wrapping with a parent widget, 
