@@ -32,7 +32,7 @@ void main() {
         Builder(
           builder: (BuildContext context) {
             return SafeBuilder(
-              widgetBuilder: (_) => throw "test",
+              widgetBuilder: (_) => throw 'test',
               fallbackBuilder: (e, _) => fallbackWidget,
             );
           },

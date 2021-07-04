@@ -73,10 +73,10 @@ void main() {
       buildWithCondition(false),
     );
 
-    Finder childFinder = find.byKey(childKey);
+    final Finder childFinder = find.byKey(childKey);
     expect(childFinder, findsOneWidget);
 
-    Finder parentFinder = find.byKey(parentKey);
+    final Finder parentFinder = find.byKey(parentKey);
     expect(parentFinder, findsNothing);
   });
 }

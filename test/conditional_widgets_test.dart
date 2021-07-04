@@ -27,7 +27,8 @@ void main() {
   );
 
   testWidgets(
-    'ConditionalBuilder.widget should call fallbackBuilder if condition == false',
+    'ConditionalBuilder.widget should call fallbackBuilder '
+    'if condition == false',
     (WidgetTester tester) async {
       final Widget trueWidget = Container();
       final Widget fallbackWidget = Container();
@@ -79,8 +80,9 @@ void main() {
   );
 
   testWidgets(
-    'ConditionalBuilder.widgets should call fallbackBuilder if condition == false',
-        (WidgetTester tester) async {
+    'ConditionalBuilder.widgets should call fallbackBuilder'
+    ' if condition == false',
+    (WidgetTester tester) async {
       final List<Widget> trueWidgetList = [Container()];
       final List<Widget> fallbackWidgetList = [Container()];
       await tester.pumpWidget(
@@ -88,11 +90,11 @@ void main() {
           builder: (BuildContext context) {
             return Column(
                 children: ConditionalBuilder.widgets(
-                  context: context,
-                  condition: (_) => false,
-                  trueBuilder: (_) => trueWidgetList,
-                  fallbackBuilder: (_) => fallbackWidgetList,
-                ));
+              context: context,
+              condition: (_) => false,
+              trueBuilder: (_) => trueWidgetList,
+              fallbackBuilder: (_) => fallbackWidgetList,
+            ));
           },
         ),
       );
@@ -109,7 +111,7 @@ void main() {
 
   testWidgets(
     'Conditional.widget should use widget if condition == true',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget trueWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
@@ -132,7 +134,7 @@ void main() {
 
   testWidgets(
     'Conditional.widget should use fallback if condition == false',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget trueWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
