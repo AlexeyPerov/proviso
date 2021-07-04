@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:io';
 
 /// Returns [widget] in case [condition] == true
 /// otherwise returns [fallback] which defaults to Container()
@@ -79,24 +78,4 @@ class ProfileModeWidget extends ConditionWidget {
 class WebOnlyWidget extends ConditionWidget {
   const WebOnlyWidget({Key? key, required Widget widget, Widget? fallback})
       : super(key: key, widget: widget, condition: kIsWeb, fallback: fallback);
-}
-
-class MobileOnlyWidget extends ConditionWidget {
-  MobileOnlyWidget({Key? key, required Widget widget, Widget? fallback})
-      : super(
-            key: key,
-            widget: widget,
-            condition:
-                Platform.isAndroid || Platform.isIOS || Platform.isFuchsia,
-            fallback: fallback);
-}
-
-class DesktopOnlyWidget extends ConditionWidget {
-  DesktopOnlyWidget({Key? key, required Widget widget, Widget? fallback})
-      : super(
-            key: key,
-            widget: widget,
-            condition:
-                Platform.isWindows || Platform.isMacOS || Platform.isLinux,
-            fallback: fallback);
 }
