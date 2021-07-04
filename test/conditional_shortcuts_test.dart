@@ -5,7 +5,7 @@ import 'package:proviso/proviso.dart';
 void main() {
   testWidgets(
     'ConditionBuilder should call trueBuilder if condition == true',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget trueWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
@@ -27,7 +27,7 @@ void main() {
 
   testWidgets(
     'ConditionBuilder should call fallbackBuilder if condition == false',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget trueWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
@@ -49,7 +49,7 @@ void main() {
 
   testWidgets(
     'ConditionWidget should use widget if condition == true',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget trueWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
@@ -71,7 +71,7 @@ void main() {
 
   testWidgets(
     'ConditionWidget should use fallback if condition == false',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget trueWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(

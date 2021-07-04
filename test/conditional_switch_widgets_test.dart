@@ -5,7 +5,7 @@ import 'package:proviso/proviso.dart';
 void main() {
   testWidgets(
     'SwitchCaseBuilder.widget should use caseBuilder by case "1" '
-        'if condition == "1"',
+    'if condition == "1"',
     (WidgetTester tester) async {
       final Widget targetConditionWidget = Container();
       final Widget fallbackWidget = Container();
@@ -29,7 +29,7 @@ void main() {
 
   testWidgets(
     'SwitchCaseBuilder.widget should use fallbackBuilder '
-        'if condition is not suitable by any case',
+    'if condition is not suitable by any case',
     (WidgetTester tester) async {
       final Widget targetConditionWidget = Container();
       final Widget fallbackWidget = Container();
@@ -53,7 +53,7 @@ void main() {
 
   testWidgets(
     'SwitchCaseBuilder.widgets should use widgets list by case "1" '
-        'if condition == "1"',
+    'if condition == "1"',
     (WidgetTester tester) async {
       final List<Widget> targetConditionWidgetList = [Container()];
       final List<Widget> fallbackWidgetList = [Container()];
@@ -84,7 +84,7 @@ void main() {
 
   testWidgets(
     'SwitchCaseBuilder.widgets should use fallback widgets list '
-        'if condition is not suitable by any case',
+    'if condition is not suitable by any case',
     (WidgetTester tester) async {
       final List<Widget> targetConditionWidgetList = [Container()];
       final List<Widget> fallbackWidgetList = [Container()];
@@ -115,8 +115,8 @@ void main() {
 
   testWidgets(
     'SwitchCase.widget should use caseBuilder by case "1" '
-        'if condition == "1"',
-        (WidgetTester tester) async {
+    'if condition == "1"',
+    (WidgetTester tester) async {
       final Widget targetConditionWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
@@ -139,8 +139,8 @@ void main() {
 
   testWidgets(
     'SwitchCase.widget should use fallback widget '
-        'if condition is not suitable by any case',
-        (WidgetTester tester) async {
+    'if condition is not suitable by any case',
+    (WidgetTester tester) async {
       final Widget targetConditionWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
@@ -163,7 +163,7 @@ void main() {
 
   testWidgets(
     'SwitchCase.widgets should use widgets list by case "1" '
-        'if condition == "1"',
+    'if condition == "1"',
     (WidgetTester tester) async {
       final List<Widget> targetConditionWidgetList = [Container()];
       final List<Widget> fallbackWidgetList = [Container()];
@@ -194,7 +194,7 @@ void main() {
 
   testWidgets(
     'SwitchCase.widgets should use fallback widgets list '
-        'if condition is not suitable by any case',
+    'if condition is not suitable by any case',
     (WidgetTester tester) async {
       final List<Widget> targetConditionWidgetList = [Container()];
       final List<Widget> fallbackWidgetList = [Container()];

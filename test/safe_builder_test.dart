@@ -5,7 +5,7 @@ import 'package:proviso/proviso.dart';
 void main() {
   testWidgets(
     'SafeBuilder should call widgetBuilder if there is no error',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget validWidget = Container();
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
@@ -26,7 +26,7 @@ void main() {
 
   testWidgets(
     'SafeBuilder should call fallbackWidget if there is an error',
-        (WidgetTester tester) async {
+    (WidgetTester tester) async {
       final Widget fallbackWidget = Container();
       await tester.pumpWidget(
         Builder(

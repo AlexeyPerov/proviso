@@ -18,8 +18,8 @@ class ConditionWidget extends StatelessWidget {
     return condition
         ? widget
         : fallback != null
-        ? fallback!
-        : Container();
+            ? fallback!
+            : Container();
   }
 }
 
@@ -32,9 +32,9 @@ class ConditionBuilder extends StatelessWidget {
 
   const ConditionBuilder(
       {Key? key,
-        required this.condition,
-        required this.trueBuilder,
-        this.fallbackBuilder})
+      required this.condition,
+      required this.trueBuilder,
+      this.fallbackBuilder})
       : super(key: key);
 
   @override
@@ -52,28 +52,28 @@ class ConditionBuilder extends StatelessWidget {
 class DebugModeWidget extends ConditionWidget {
   const DebugModeWidget({Key? key, required Widget widget, Widget? fallback})
       : super(
-      key: key,
-      widget: widget,
-      condition: !kReleaseMode,
-      fallback: fallback);
+            key: key,
+            widget: widget,
+            condition: !kReleaseMode,
+            fallback: fallback);
 }
 
 class ReleaseModeWidget extends ConditionWidget {
   const ReleaseModeWidget({Key? key, required Widget widget, Widget? fallback})
       : super(
-      key: key,
-      widget: widget,
-      condition: kReleaseMode,
-      fallback: fallback);
+            key: key,
+            widget: widget,
+            condition: kReleaseMode,
+            fallback: fallback);
 }
 
 class ProfileModeWidget extends ConditionWidget {
   const ProfileModeWidget({Key? key, required Widget widget, Widget? fallback})
       : super(
-      key: key,
-      widget: widget,
-      condition: kProfileMode,
-      fallback: fallback);
+            key: key,
+            widget: widget,
+            condition: kProfileMode,
+            fallback: fallback);
 }
 
 class WebOnlyWidget extends ConditionWidget {
@@ -84,19 +84,19 @@ class WebOnlyWidget extends ConditionWidget {
 class MobileOnlyWidget extends ConditionWidget {
   MobileOnlyWidget({Key? key, required Widget widget, Widget? fallback})
       : super(
-      key: key,
-      widget: widget,
-      condition:
-      Platform.isAndroid || Platform.isIOS || Platform.isFuchsia,
-      fallback: fallback);
+            key: key,
+            widget: widget,
+            condition:
+                Platform.isAndroid || Platform.isIOS || Platform.isFuchsia,
+            fallback: fallback);
 }
 
 class DesktopOnlyWidget extends ConditionWidget {
   DesktopOnlyWidget({Key? key, required Widget widget, Widget? fallback})
       : super(
-      key: key,
-      widget: widget,
-      condition:
-      Platform.isWindows || Platform.isMacOS || Platform.isLinux,
-      fallback: fallback);
+            key: key,
+            widget: widget,
+            condition:
+                Platform.isWindows || Platform.isMacOS || Platform.isLinux,
+            fallback: fallback);
 }
