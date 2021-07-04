@@ -4,7 +4,7 @@
 
 A complete set of tools for conditional rendering (`if`-`else` and `switch` conditions), 
 subtree wrapping with a parent widget, 
-and some handy shortcuts (like DebugWidget, WebOnlyWidget, SafeBuilder and many more). :+1:
+and some handy shortcuts (like DebugWidget, WebOnlyWidget, SafeBuilder, and many more). :+1:
 
 ### Install
 
