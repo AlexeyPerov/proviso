@@ -6,20 +6,20 @@ A complete set of tools for conditional rendering (`if`-`else` and `switch` cond
 subtree wrapping with a parent widget, 
 and some handy shortcuts (like DebugWidget, WebOnlyWidget, SafeBuilder, and many more). :+1:
 
-### Install
+## Install
 
 In flutter project add the dependency:
 
 ```yml
 dependencies:
   ...
-  proviso: ^1.0.2
+  proviso: ^1.0.3
 ```
 
 ## Why
 To make a more readable and simpler conditional statement code.
 
-### All variants of conditional rendering you will ever need in a single package
+## All variants of conditional rendering you will ever need in a single package
 in the form of widgets:
 ```dart
 Row(
@@ -55,7 +55,7 @@ ConditionalBuilder.widget(
   fallbackBuilder: (_) => fallbackWidget,
 );
 ```
-switch case widgets and builders:
+#### Switch case widgets and builders:
 ```dart
 final Widget targetConditionWidget = Container();
 final Widget fallbackWidget = Container();
@@ -67,7 +67,7 @@ SwitchCaseBuilder.widget<String>(
   fallbackBuilder: (_) => fallbackWidget,
 );  
 ```
-### conditional parent widget
+#### Conditional parent widget
 ```dart
 ConditionalWrap(
   shouldWrap: shouldWrapChildInParent,
@@ -77,18 +77,14 @@ ConditionalWrap(
   ),
 )
 ```
-### try/catch builders
+#### try/catch builders
 ```dart
 SafeBuilder(
   widgetBuilder: (_) => validWidget,
   fallbackBuilder: (e, _) => fallbackWidget, // called if widgetBuilder fails with error
 )
 ```
-#### and some more like:
-```dart
-DebugOnlyWidget, MobileOnlyWidget, WebOnlyWidget etc
-```
-#### Can conditionally render a single widget or a list of widgets
+#### Conditionally render a single widget or a list of widgets
 ```dart
 ConditionalBuilder.widgets(
   context: context,
@@ -96,6 +92,10 @@ ConditionalBuilder.widgets(
   trueBuilder: (_) => [Container(), Container()],
   fallbackBuilder: (_) => [],
 )
+```
+#### Some more helpers like:
+```dart
+DebugOnlyWidget, WebOnlyWidget etc
 ```
 ## Contributions
 
