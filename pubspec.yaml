@@ -1,6 +1,6 @@
 name: proviso
-description: A Flutter package for widgets conditional rendering and wrapping.
-version: 1.0.1
+description: Complete set of tools for widgets conditional rendering and wrapping.
+version: 1.0.2
 homepage: https://github.com/AlexeyPerov/proviso
 
 environment:

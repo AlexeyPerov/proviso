@@ -1,3 +1,7 @@
+## [1.0.2] - 2021-07-06
+
+- General package info updated
+
 ## [1.0.1] - 2021-07-06
 
 - Removed dart:io dependency to fully support Web platform
