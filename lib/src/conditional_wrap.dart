@@ -23,6 +23,6 @@ class ConditionalWrap extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return shouldWrap ? this.parentBuilder(this.child) : this.child;
+    return shouldWrap ? parentBuilder(child) : child;
   }
 }
