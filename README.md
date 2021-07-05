@@ -13,7 +13,7 @@ In flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  proviso: ^1.0.3
+  proviso: ^1.0.4
 ```
 
 ## Why

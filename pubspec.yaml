@@ -1,6 +1,6 @@
 name: proviso
-description: Complete set of tools for widgets conditional rendering and wrapping.
-version: 1.0.3
+description: Complete set of tools for widgets conditional rendering and wrapping. Conditional widgets and builders.
+version: 1.0.4
 homepage: https://github.com/AlexeyPerov/proviso
 
 environment:

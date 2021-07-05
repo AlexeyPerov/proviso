@@ -1,3 +1,7 @@
+## [1.0.4] - 2021-07-07
+
+- Readme & pubspec fixes
+
 ## [1.0.3] - 2021-07-06
 
 - Readme fixes
