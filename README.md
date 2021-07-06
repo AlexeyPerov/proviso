@@ -13,7 +13,7 @@ In flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  proviso: ^1.0.4
+  proviso: ^1.0.5
 ```
 
 ## Why
@@ -28,7 +28,8 @@ Row(
       condition: starred,
       widget: Icon(
         Icons.favorite
-      )
+      ),
+      fallback: fallbackWidget
     ),
     ConditionWidget(
       condition: archived,
